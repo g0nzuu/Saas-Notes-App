@@ -9,26 +9,36 @@ const tenantsRoutes = require('./routes/tenants');
 const { errorHandler } = require('./middleware/response');
 
 const app = express();
-app.use(cors());
+
+// ✅ Configure CORS to allow your frontend domain
+const corsOptions = {
+  origin: [
+    "https://saas-notes-app-frontend-ivory.vercel.app/", // replace with your actual frontend URL
+  ],
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true,
+};
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
-// health check
+// ✅ Health check endpoint
 app.get('/health', (req, res) => res.json({ success: true, status: 'ok' }));
 
-// routes
+// ✅ Routes
 app.use('/auth', authRoutes);
 app.use('/notes', notesRoutes);
 app.use('/tenants', tenantsRoutes);
 
-// centralized error handler
+// ✅ Centralized error handler
 app.use(errorHandler);
 
-// connect to MongoDB once (before handling requests)
+// ✅ Connect to MongoDB once (before handling requests)
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/saas_notes';
 mongoose.connect(MONGODB_URI)
-  .then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('MongoDB connection error:', err));
+  .then(() => console.log('✅ Connected to MongoDB'))
+  .catch(err => console.error('❌ MongoDB connection error:', err));
 
-// ❌ no app.listen() here
-// ✅ instead export the app for Vercel
+// ❌ Do not call app.listen() here (Vercel handles it)
+// ✅ Export the app for Vercel serverless functions
 module.exports = app;
